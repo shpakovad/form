@@ -7,7 +7,7 @@ const input = (props) => {
 
     return (
         <>
-            <input className={style.formInp} {...props.input} {...props} />
+            <input className={style.formInp} {...props.input} {...props}  />
             {meta.error && meta.touched &&
             <div className={style.errorValue}>
                 {meta.error}

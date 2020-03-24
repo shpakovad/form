@@ -1,4 +1,4 @@
-export const validate = (values,allValues,props) => {
+export const validate = (values) => {
 
     const errors = {};
 
@@ -68,22 +68,22 @@ export const validate = (values,allValues,props) => {
         if (!values.preferredDns) {
             errors.preferredDns = 'Required!';
         } else if (values.preferredDns) {
-            let arrWay = values.preferredDns.split(".");
-            if (arrWay.length !== 4) {
+            let arrPrefDns = values.preferredDns.split(".");
+            if (arrPrefDns.length !== 4) {
                 errors.preferredDns = 'Invalid DNS address!'
             }
-            for (let oct of arrWay) {
+            for (let oct of arrPrefDns) {
                 if (isNaN(oct) || Number(oct) < 0 || Number(oct) > 255) {
                     errors.preferredDns = 'Invalid DNS address!';
                 }
             }
         }
         if (values.alternativeDns) {
-            let arrWay = values.alternativeDns.split(".");
-            if (arrWay.length !== 4) {
+            let arrAltDns = values.alternativeDns.split(".");
+            if (arrAltDns.length !== 4) {
                 errors.alternativeDns = 'Invalid DNS address!'
             }
-            for (let oct of arrWay) {
+            for (let oct of arrAltDns) {
                 if (isNaN(oct) || Number(oct) < 0 || Number(oct) > 255) {
                     errors.alternativeDns = 'Invalid DNS address!';
                 }
@@ -142,22 +142,22 @@ export const validate = (values,allValues,props) => {
         if (!values.preferredDns1) {
             errors.preferredDns1 = 'Required!';
         } else if (values.preferredDns1) {
-            let arrWay = values.preferredDns1.split(".");
-            if (arrWay.length !== 4) {
+            let arrPrefDns = values.preferredDns1.split(".");
+            if (arrPrefDns.length !== 4) {
                 errors.preferredDns1 = 'Invalid DNS address!'
             }
-            for (let oct of arrWay) {
+            for (let oct of arrPrefDns) {
                 if (isNaN(oct) || Number(oct) < 0 || Number(oct) > 255) {
                     errors.preferredDns1 = 'Invalid DNS address!';
                 }
             }
         }
         if (values.alternativeDns1) {
-            let arrWay = values.alternativeDns1.split(".");
-            if (arrWay.length !== 4) {
+            let arrAltDns = values.alternativeDns1.split(".");
+            if (arrAltDns.length !== 4) {
                 errors.alternativeDns1 = 'Invalid DNS address!'
             }
-            for (let oct of arrWay) {
+            for (let oct of arrAltDns) {
                 if (isNaN(oct) || Number(oct) < 0 || Number(oct) > 255) {
                     errors.alternativeDns1 = 'Invalid DNS address!';
                 }
