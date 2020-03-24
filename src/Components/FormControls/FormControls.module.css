@@ -1,0 +1,46 @@
+.formInp {
+    display: inline-block;
+    width: 335px;
+    margin-left: 15px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    border: 1px solid grey
+}
+
+.errorValue {
+    color: red;
+    position: absolute;
+    left: 10px;
+    font-size: 12px;
+}
+
+.errorValueWs {
+    color: red;
+    position: absolute;
+    left: 655px;
+    font-size: 12px;
+}
+
+.formSelect {
+    display: inline-block;
+    width: 265px;
+    margin-left: 15px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.errorNetworkName {
+    position: absolute;
+    font-size: 12px;
+    left: 650px;
+    top: 70px;
+    color: red;
+}
+
+.checkboxInput {
+    background: white;
+    height: 17px;
+    width: 17px;
+}
