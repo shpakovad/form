@@ -3,7 +3,6 @@ import style from '../../../ReduxForm/ReduxForm.module.css'
 import {Field} from 'redux-form';
 import inputWs from '../../../FormControls/InputWs';
 
-
 const DnsForm = (props) => {
 
     return (<>

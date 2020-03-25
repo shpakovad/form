@@ -5,7 +5,6 @@ import BtnRadioDnsForm from "./BtnRadioDnsForm/BtnRadioDnsForm";
 import DnsForm from "./DnsForm/DnsForm";
 import style from "../../ReduxForm/ReduxForm.module.css";
 
-
 const Ethernet = (props) => {
 
     const {formValues} = props;
@@ -18,17 +17,16 @@ const Ethernet = (props) => {
 
     let enableDnsForm = !checkedAutoBtnDns ? `${style.disabled}` : ``;
 
-
-    return ( <>
-                    <BtnRadioIpForm checkedAutoBtnIp={checkedAutoBtnIp} {...props}/>
-                    <div className={enableIpForm}>
-                        <IpForm/>
-                    </div>
-                    <BtnRadioDnsForm checkedAutoBtnDns={checkedAutoBtnDns} {...props}/>
-                    <div className={enableDnsForm}>
-                        <DnsForm/>
-                    </div>
-                </>
+    return (<>
+            <BtnRadioIpForm checkedAutoBtnIp={checkedAutoBtnIp} {...props}/>
+            <div className={enableIpForm}>
+                <IpForm/>
+            </div>
+            <BtnRadioDnsForm checkedAutoBtnDns={checkedAutoBtnDns} {...props}/>
+            <div className={enableDnsForm}>
+                <DnsForm/>
+            </div>
+        </>
 
     );
 };

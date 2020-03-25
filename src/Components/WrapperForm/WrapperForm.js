@@ -2,8 +2,7 @@ import React from 'react';
 import style from './WrapperForm.module.css';
 import ReduxFormContainer from '../ReduxForm/ReduxFormContainer';
 
-
-const WrapperForm = ()=> {
+const WrapperForm = () => {
 
     return (
         <div className={style.wrapper}>

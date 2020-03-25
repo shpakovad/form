@@ -7,7 +7,7 @@ import Ethernet from '../Ethernet/Ethernet';
 import Wireless from '../Wireless/Wireless';
 
 
-const  ReduxForm = (props)=> {
+const ReduxForm = (props) => {
 
     const {handleSubmit} = props;
 
@@ -33,7 +33,7 @@ const  ReduxForm = (props)=> {
             </div>
         </form>
     );
-}
+};
 
 
 export default reduxForm({

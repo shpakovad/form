@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './FormControls.module.css'
 
-
 const select = (props) => {
     const { meta} = props;
     return (

@@ -16,7 +16,7 @@ const Ethernet = (props) => {
 
     let enableIpForm = !checkedAutoBtnIp ? `${style.disabled}` : ``;
 
-    let enableDnsForm = !checkedAutoBtnDns ? `${style.disabled}` : `` ;
+    let enableDnsForm = !checkedAutoBtnDns ? `${style.disabled}` : ``;
 
     return (<>
             <BtnRadioIpForm checkedAutoBtnIp={checkedAutoBtnIp} {...props}/>

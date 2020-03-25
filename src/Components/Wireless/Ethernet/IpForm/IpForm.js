@@ -3,7 +3,6 @@ import style from '../../../ReduxForm/ReduxForm.module.css'
 import {Field} from "redux-form";
 import inputWs from '../../../FormControls/InputWs';
 
-
 const IpForm = (props) => {
 
     return (<>
@@ -21,7 +20,7 @@ const IpForm = (props) => {
             </div>
         </>
     );
-}
+};
 
 
 export default (IpForm)
