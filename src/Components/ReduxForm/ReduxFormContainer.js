@@ -1,12 +1,11 @@
-import React from 'react';
-import ReduxForm from './ReduxForm'
-import {getFormValues, reset} from 'redux-form';
-import {connect} from 'react-redux';
+import React from "react";
+import ReduxForm from "./ReduxForm";
+import {getFormValues, reset} from "redux-form";
+import {connect} from "react-redux";
 
 let ReduxFormContainer = (props) => {
 
-    let submit = (values, dispatch) => {
-        dispatch(reset("fillingForm"));
+    const submit = (values, dispatch) => {
         console.log(JSON.stringify({
             ethernetSettings: {
                 followingAddress: {
@@ -28,14 +27,14 @@ let ReduxFormContainer = (props) => {
                     alternativeDnsServer: values.alternativeDns1,
                 }
             }
-        }))
-
+        }));
+        dispatch(reset("fillingForm"));
     };
     return <ReduxForm onSubmit={submit} formValues={props.formValues} {...props}/>
 };
 
 function mapStateToProps(state) {
-    const formValues = getFormValues('fillingForm')(state) || {};
+    const formValues = getFormValues("fillingForm")(state) || {};
     return {
         formValues,
     };

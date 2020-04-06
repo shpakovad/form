@@ -1,5 +1,6 @@
-import React from 'react';
-import style from './FormControls.module.css'
+import React from "react";
+import style from "./FormControls.module.css";
+
 
 const select = (props) => {
     const { meta} = props;
@@ -15,6 +16,5 @@ const select = (props) => {
         </>
     )
 };
-
 
 export default select;

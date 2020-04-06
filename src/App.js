@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import WrapperForm from './Components/WrapperForm/WrapperForm';
+import React from "react";
+import "./App.css";
+import WrapperForm from "./Components/WrapperForm/WrapperForm";
 
 
-const  App=() =>{
+const App = () => {
     return (
-        <div className='App'>
+        <div className="App">
             <WrapperForm/>
         </div>
     );

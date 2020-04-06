@@ -1,5 +1,6 @@
-import React from 'react';
-import style from './FormControls.module.css'
+import React from "react";
+import style from "./FormControls.module.css";
+
 
 const inputWs = (props) => {
     const { meta} = props;
@@ -15,6 +16,5 @@ const inputWs = (props) => {
         </>
     )
 };
-
 
 export default inputWs;

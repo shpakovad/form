@@ -1,5 +1,6 @@
-import React from 'react';
-import style from './FormControls.module.css'
+import React from "react";
+import style from "./FormControls.module.css";
+
 
 const btnInputCheckbox = (props) => {
     const { meta} = props;
@@ -14,6 +15,5 @@ const btnInputCheckbox = (props) => {
         </>
     )
 };
-
 
 export default btnInputCheckbox;

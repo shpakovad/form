@@ -1,10 +1,10 @@
-import React from 'react';
-import style from '../ReduxForm/ReduxForm.module.css';
-import {reduxForm} from 'redux-form';
-import {validate} from '../../Validation/Validation';
-import FormSubmit from '../FormSubmit/FormSubmit';
-import Ethernet from '../Ethernet/Ethernet';
-import Wireless from '../Wireless/Wireless';
+import React from "react";
+import style from "../ReduxForm/ReduxForm.module.css";
+import {reduxForm} from "redux-form";
+import {validate} from "../../Validation/Validation";
+import FormSubmit from "../FormSubmit/FormSubmit";
+import Ethernet from "../Ethernet/Ethernet";
+import Wireless from "../Wireless/Wireless";
 
 
 const ReduxForm = (props) => {
@@ -37,6 +37,6 @@ const ReduxForm = (props) => {
 
 
 export default reduxForm({
-    form: 'fillingForm',
+    form: "fillingForm",
     validate
 })(ReduxForm);

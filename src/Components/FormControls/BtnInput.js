@@ -1,5 +1,6 @@
-import React from 'react';
-import style from './FormControls.module.css'
+import React from "react";
+import style from "./FormControls.module.css";
+
 
 const btnInput = (props) => {
     const { meta} = props;
@@ -14,6 +15,5 @@ const btnInput = (props) => {
         </>
     )
 };
-
 
 export default btnInput;

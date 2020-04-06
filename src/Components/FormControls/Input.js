@@ -1,5 +1,6 @@
-import React from 'react';
-import style from './FormControls.module.css'
+import React from "react";
+import style from "./FormControls.module.css";
+
 
 const input = (props) => {
 
@@ -15,6 +16,5 @@ const input = (props) => {
         </>
     )
 };
-
 
 export default input;
