@@ -9,7 +9,7 @@ const IpForm = (props) => {
     return (<>
             <div className={style.miniForm}>
                 <span className={style.title}>IP address: </span><span className={style.footnote}>*</span>
-                "<Field name="ipAddress1" component={inputWs} type="text"/>"
+                <Field name="ipAddress1" component={inputWs} type="text"/>
             </div>
             <div className={style.miniForm}>
                 <span className={style.title}>Subnet Mask:</span> <span className={style.footnote}>*</span>
