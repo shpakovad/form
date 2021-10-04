@@ -19,13 +19,16 @@ const ReduxForm = (props) => {
                     <span>Ethernet Settings</span>
                 </div>
 
+
                 <div className={style.wrapper}>
                     <Ethernet {...props} />
                 </div>
 
+
                 <div className={style.wrapperTitleWS}>
                     <span>Wireless Settings</span>
                 </div>
+
 
                 <Wireless {...props}/>
 
